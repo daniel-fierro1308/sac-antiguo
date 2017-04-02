@@ -1,0 +1,377 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+	text-align:justify;
+}
+
+#LayoutDiv1 {
+	margin-top:7%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv2 {
+	margin-top:15%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv3 {
+	margin-top:15%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv4 {
+	margin-top:15%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv5 {
+	margin-top:15%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv6 {
+	margin-top:15%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+h2{
+	font-size:16px;
+	color:#069;
+	}
+	
+	h4{
+		font-size:16px;	
+		}
+		
+a:visited{
+	color:#03F;}
+	
+p{
+	font-size:16px;
+	margin-top:7px;
+	}	
+li{
+	font-size:16px;}
+
+#LayoutDiv0 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv01 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv02 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv03 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+			
+
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	text-align:justify;
+}
+#LayoutDiv1 {
+	margin-top:3%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv2 {
+	margin-top:3%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv3 {
+	margin-top:5%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv4 {
+	margin-top:5%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv5 {
+	margin-top:5%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv6 {
+	margin-top:5%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv0 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv01 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv02 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv03 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+	
+	h4{
+		font-size:16px;	
+		}
+		
+a:visited{
+	color:#03F;}
+
+
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+	text-align:justify;
+}
+#LayoutDiv1 {
+	margin-top:3%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	size:10dp;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 47%;
+	display: block;
+	
+}
+#LayoutDiv2 {
+	margin-top:3%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: none;
+	float: right;
+	margin-left: 0;
+	width: 47%;
+	display: block;
+}
+#LayoutDiv3 {
+	margin-top:5%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+}
+#LayoutDiv4 {
+	margin-top:5%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+}
+#LayoutDiv5 {
+	margin-top:5%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv6 {
+	margin-top:5%;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv0 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+}
+#LayoutDiv01 {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+}
+#LayoutDiv02 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+}
+#LayoutDiv03 {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+}
+	
+	h4{
+		font-size:18px;	
+		}
+		
+a{
+	color:#03F;
+	text-decoration:none;}
+
+
+}

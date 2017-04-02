@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mensaje {
+	margin-top:15%;
+	border:1px solid #999;
+	margin-right:32%;
+	margin-left:32%;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+
+a{
+	text-decoration:none;
+	color:#066;
+}
+
+
+a:visited{
+	text-decoration:none;
+	color:#066;
+}
+
+
+

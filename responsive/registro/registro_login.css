@@ -1,0 +1,508 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+
+
+		.regtext {
+	font-size:13px;
+	color:#000;
+	font-family: Tahoma, Geneva, sans-serif;}
+	
+	.regtext a{
+	font-size:13px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color:#06F;
+	}
+	
+	form.registro{
+	background: none repeat scroll 0 0 #FFF;
+	border: 1px solid #FFF;
+	padding:20px;  
+	width:85%;
+	margin:4%;
+	box-shadow:0px 0px 5px black; 
+	-webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+	position:relative; 
+	 }
+	 
+	  form.registro div { 
+            margin-bottom: 30px; 
+            overflow: hidden; 
+        } 
+		
+		 form.registro div label { 
+            display: block; 
+            float: left;
+			margin-left:5px; 
+            line-height: 25px;
+			font-size:15px;
+			font-family: Tahoma, Geneva, sans-serif;
+        } 
+		
+		 form.registro div input[type="text"]{ 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div input[type="password"]{ 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div input[type="number"]{ 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div input[type="email"]  { 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div select{
+			padding:4px;
+			float:right;
+			 border: 1px solid #006;
+			 font-family: Tahoma, Geneva, sans-serif;
+			 width:172px;
+			}
+			
+			form.registro div select label{
+				 display: block; 
+            float: left;
+			margin-left:5px; 
+            line-height: 25px;
+			font-size:15px;
+			font-family: Tahoma, Geneva, sans-serif;}
+			
+			 form.registro div input[type="submit"] { 
+            background:#060; 
+            border: 1px solid #C6C6C6; 
+            float: right;
+			height:30px;
+            font-weight: bold; 
+            padding: 4px 20px;
+			color:#FFF;
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+        }
+		
+		form.registro div input[type="submit"]:hover{
+			background:#066;
+			cursor:pointer;
+			}
+			
+			a:visited{
+			color:#03C;}
+			
+			.defecto {
+    margin: 40px auto 0;
+    border: 1px solid #777;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    background: #09C;
+	position:relative;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:15px;
+}
+
+form.registro h1{
+	color: #069;
+    text-align: center;
+	font-size:30px;
+    margin-top: 0px;
+	margin-bottom:20px;
+	
+	}
+
+section{
+	box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		width:70%;
+		margin-top:12%;
+		padding:4%;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:16px;
+		text-align:justify;
+		margin-left:16%;
+		margin-bottom:10%;
+}
+
+#oculto {
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+}	
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 500px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+
+
+		.regtext {
+	font-size:13px;
+	color:#000;
+	font-family: Tahoma, Geneva, sans-serif;}
+	
+	.regtext a{
+	font-size:13px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color:#06F;
+	}
+	
+form.registro{
+	background: none repeat scroll 0 0 #FFF;
+		 border: 1px solid #FFF;
+		  margin:0 auto;
+		   padding:20px;
+		     top:50px;  
+		   width:55%;
+		   margin-bottom:80px;
+		    box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+	 position:relative;  
+	 }
+	 
+	  form.registro div { 
+            margin-bottom: 30px; 
+            overflow: hidden; 
+        } 
+		
+		 form.registro div label { 
+            display: block; 
+            float: left;
+			margin-left:5px; 
+            line-height: 25px;
+			font-size:15px;
+			font-family: Tahoma, Geneva, sans-serif;
+        } 
+		
+		 form.registro div input[type="text"]{ 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div input[type="password"]{ 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div input[type="number"]{ 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div input[type="email"]  { 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div select{
+			padding:4px;
+			float:right;
+			 border: 1px solid #006;
+			 font-family: Tahoma, Geneva, sans-serif;
+			 width:172px;
+			}
+			
+			form.registro div select label{
+				 display: block; 
+            float: left;
+			margin-left:5px; 
+            line-height: 25px;
+			font-size:15px;
+			font-family: Tahoma, Geneva, sans-serif;}
+			
+			 form.registro div input[type="submit"] { 
+            background:#060; 
+            border: 1px solid #C6C6C6; 
+            float: right;
+			height:30px;
+            font-weight: bold; 
+            padding: 4px 20px;
+			color:#FFF;
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+        }
+		
+		form.registro div input[type="submit"]:hover{
+			background:#066;
+			cursor:pointer;
+			}
+			
+			a:visited{
+			color:#03C;}
+			
+			.defecto {
+    margin: 40px auto 0;
+    border: 1px solid #777;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    background: #09C;
+	position:relative;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:15px;
+}
+
+form.registro h1{
+	color: #069;
+    text-align: center;
+	font-size:30px;
+    margin-top: 0px;
+	margin-bottom:20px;
+	
+	}
+
+section{
+	box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		width:50%;
+		margin-top:12%;
+		padding:2%;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:16px;
+		text-align:justify;
+		margin-left:23%;
+}
+
+#oculto {
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+}	
+
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+
+
+		.regtext {
+	font-size:13px;
+	color:#000;
+	font-family: Tahoma, Geneva, sans-serif;}
+	
+	.regtext a{
+	font-size:13px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color:#06F;
+	}
+	
+	form.registro{
+	background: none repeat scroll 0 0 #FFF;
+		 border: 1px solid #FFF;
+		  margin:0 auto;
+		   padding:20px;
+		     top:60px;  
+		   width:30%;
+		   margin-bottom:80px;
+		    box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+	 position:relative;
+	 float:right;
+	 margin-right:10%; 
+	 
+	 }
+	 
+	  form.registro div { 
+            margin-bottom: 30px; 
+            overflow: hidden; 
+        } 
+		
+		 form.registro div label { 
+            display: block; 
+            float: left;
+			margin-left:5px; 
+            line-height: 25px;
+			font-size:15px;
+			font-family: Tahoma, Geneva, sans-serif;
+        } 
+		
+		 form.registro div input[type="text"]{ 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div input[type="password"]{ 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div input[type="number"]{ 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        } 
+		
+		form.registro div input[type="email"]  { 
+            border: 1px solid #006; 
+            float: right; 
+            padding: 4px;
+			background:#fff;
+        }  
+		
+		form.registro div select{
+			padding:4px;
+			float:right;
+			 border: 1px solid #006;
+			 font-family: Tahoma, Geneva, sans-serif;
+			 width:172px;
+			}
+			
+			form.registro div select label{
+			display: block; 
+            float: left;
+			margin-left:5px; 
+            line-height: 25px;
+			font-size:15px;
+			font-family: Tahoma, Geneva, sans-serif;
+			}
+			
+			 form.registro div input[type="submit"] { 
+            background:#060; 
+            border: 1px solid #C6C6C6; 
+            float: right;
+			height:30px;
+            font-weight: bold; 
+            padding: 4px 20px;
+			color:#FFF;
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+        }
+		
+		form.registro div input[type="submit"]:hover{
+			background:#066;
+			cursor:pointer;
+			}
+			
+			a:visited{
+			color:#03C;}
+			
+			.defecto {
+    margin: 40px auto 0;
+    border: 1px solid #777;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    background: #09C;
+	position:relative;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:15px;
+}
+
+form.registro h1{
+	color: #069;
+    text-align: center;
+	font-size:30px;
+    margin-top: 0px;
+	margin-bottom:20px;
+	
+	}
+	
+section{
+	box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		width:20%;
+		margin-top:12%;
+		padding:2%;
+		text-align:justify;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:16px;
+		margin-left:12%;
+		float:left;
+}
+
+#oculto {
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+}	
+	
+	
+
+}

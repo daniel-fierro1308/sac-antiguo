@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+
+.defecto {
+    margin: 40px auto 0;
+    border: 1px solid #777;
+    padding: 3px;
+	color:#FFF;
+    text-align: center;
+    width: 50%;
+    background: #09C;
+	position:relative;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:15px;
+}
+
+#cambiar {
+    width: 320px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.mcambiar {
+	background: none repeat scroll 0 0 #FFF;
+    margin: 85px auto ;
+	color:#09C;
+	  box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+	 position:relative; 
+	
+}
+
+.container {
+	margin-top:15%;
+    padding: 25px 16px 25px 10px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 90%;
+    height: auto;
+    background: #fff;
+   }
+   
+   .container h1 {
+    color: #069;
+    text-align: center;
+    font-weight: 300px;
+    margin-top: 0px;
+	margin-bottom:5%;
+}
+
+.container form label{
+	display: block; 
+            float: left;
+			margin-left:5px; 
+            line-height: 25px;
+			font-size:16px;
+			font-family: Tahoma, Geneva, sans-serif;
+			margin-top:10px;
+			color:#000;
+			}
+				
+.container form .input,.container input[type=password]{
+    background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width: 85%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-top:5px;
+}
+
+.enviar{
+margin-top:10px;
+border: solid 1px #fff;
+background: #060;
+color: #fff;
+padding: 7px 12px;
+-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		float: right;
+		cursor: pointer;
+		margin-right:12%;
+}
+
+.enviar:hover{
+	background:#066;
+	
+	}
+	
+	a:visited{
+	color:#069;}
+	
+section{
+	box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		width:70%;
+		margin-top:12%;
+		padding:8%;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:16px;
+		text-align:justify;
+		margin-left:7%;
+}
+
+#oculto {
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+}	
+
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+
+			.defecto {
+    margin: 40px auto 0;
+    border: 1px solid #777;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    background: #09C;
+	position:relative;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:15px;
+}
+
+#cambiar {
+    width: 320px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.mcambiar {
+	background: none repeat scroll 0 0 #FFF;
+    margin: 85px auto ;
+	color:#09C;
+	  box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+	 position:relative; 
+	
+}
+
+.container {
+	margin-top:7%;
+    padding: 25px 16px 25px 10px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 57%;
+    height: auto;
+    background: #fff;
+   }
+   
+   .container h1 {
+    color: #069;
+    text-align: center;
+    font-weight: 300px;
+    margin-top: 0px;
+	margin-bottom:20px;
+}
+
+.container form label{
+	display: block; 
+            float: left;
+			margin-left:5px; 
+            line-height: 25px;
+			font-size:16px;
+			font-family: Tahoma, Geneva, sans-serif;
+			margin-top:10px;
+			color:#000;
+			}
+				
+.container form .input,.container input[type=password]{
+    background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width: 100%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-top:5px;
+}
+
+.enviar{
+	margin-top:10px;
+border: solid 1px #fff;
+background: #060;
+color: #fff;
+padding: 7px 12px;
+-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		float: right;
+		cursor: pointer;
+}
+
+.enviar:hover{
+	background:#066;
+	
+	}
+	
+	a:visited{
+	color:#069;}
+	
+section{
+	box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		width:55%;
+		margin-top:12%;
+		padding:3%;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:16px;
+		text-align:justify;
+		margin-left:19.5%;
+}
+
+#oculto {
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+}	
+
+
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+
+			.defecto {
+    margin: 40px auto 0;
+    border: 1px solid #777;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    background: #09C;
+	position:relative;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:15px;
+}
+
+#cambiar {
+    width: 320px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.mcambiar {
+	background: none repeat scroll 0 0 #FFF;
+    margin: 45px auto ;
+	color:#09C;
+	  box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+	 position:relative; 
+	
+}
+
+.container {
+	margin-top:10%;
+    font-weight: 400;
+    overflow: hidden;
+    width: 30%;
+    height: auto;
+    background: #fff;
+   }
+   
+   .container h1 {
+    color: #069;
+    text-align: center;
+    font-weight: 300px;
+    margin-top: 0px;
+	margin-bottom:20px;
+}
+
+.container form label{
+	display: block; 
+            float: left;
+			margin-left:5px; 
+            line-height: 25px;
+			font-size:16px;
+			font-family: Tahoma, Geneva, sans-serif;
+			margin-top:10px;
+			color:#000;
+			}
+				
+.container form .input,.container input[type=password]{
+    background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width: 97%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-top:5px;
+}
+
+.enviar{
+	margin-top:10px;
+border: solid 1px #fff;
+background: #060;
+color: #fff;
+margin-right:1%;
+-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		float: right;
+		cursor: pointer;
+}
+
+.enviar:hover{
+	background:#066;
+	
+	}
+	
+	a:visited{
+	color:#069;}
+	
+section{
+	box-shadow:0px 0px 5px black; 
+			-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		width:25%;
+		margin-top:8.5%;
+		padding:1%;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:16px;
+		text-align:justify;
+		float:left;
+		margin-left:10%;
+}
+
+#oculto {
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+}	
+
+
+}

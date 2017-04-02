@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+
+#LayoutDiv2{
+	margin-top:5%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:justify;
+	font-size:16px;
+}
+
+#LayoutDiv3{
+	margin-top:7%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:justify;
+	font-size:16px;
+}
+
+#img1{
+	margin-bottom:3%;
+}
+
+#txt1{
+	float:right;
+	width:100%;
+}
+
+#img2{
+	margin-bottom:3%;
+}
+
+#txt2{
+	float:right;
+	width:100%;
+}
+
+#img3{
+	margin-bottom:3%;
+}
+
+#txt3{
+	float:right;
+	width:100%;
+}
+
+#LayoutDiv4{
+	clear: both;
+	float: left;
+	margin:1%;
+	width: 90%;
+	display: block;
+}
+
+#LayoutDiv5{
+	clear: both;
+	float: left;
+	margin-top:3%;
+	width: 90%;
+	display: block;
+}
+
+#LayoutDiv6{
+	clear: both;
+	float: left;
+	margin-top:3%;
+	width: 90%;
+	display: block;
+}
+
+.button a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.button{
+text-decoration:none;
+margin-top:10px;
+border: solid 1px #fff;
+background:#060;
+padding: 7px 12px;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px;
+cursor: pointer;
+margin-right:20%;
+margin-bottom:2%;
+float:left;
+}
+
+
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+
+#LayoutDiv2 {
+	margin-top:8%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.7179%;
+	display: block;
+	text-align:justify;
+}
+
+#LayoutDiv2 p{
+	margin-top:6%;
+	font-size:18px;
+}
+
+#LayoutDiv3 {
+	margin-top:3%;
+	clear: none;
+	float: left;
+  margin-left:2%;
+	width: 48.7179%;
+	display: block;
+	text-align:justify;
+	font-size:16px;
+}
+
+#img1{
+	margin-bottom:3%;
+}
+
+#txt1{
+	float:right;
+	width:89%;
+}
+
+#img2{
+	margin-bottom:3%;
+}
+
+#txt2{
+	float:right;
+	width:89%;
+}
+
+#img3{
+	margin-bottom:3%;
+}
+
+#txt3{
+	float:right;
+	width:89%;
+}
+
+#LayoutDiv4{
+	clear: both;
+	float: right;
+	margin:1%;
+	width: 88%;
+	display: block;
+}
+
+#LayoutDiv5{
+	clear: both;
+	float: right;
+	margin-top:3%;
+	width: 88%;
+	display: block;
+}
+
+#LayoutDiv6{
+	clear: both;
+	float: right;
+	margin-top:3%;
+	width: 88%;
+	display: block;
+}
+
+.button a{
+	text-decoration:none;
+	color: #fff;
+}
+
+.button{
+text-decoration:none;
+margin-top:10px;
+border: solid 1px #fff;
+background:#060;
+padding: 7px 12px;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px;
+cursor: pointer;
+margin-right:55%;
+float:left;
+}
+
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+
+#LayoutDiv2{
+	margin-top:3%;
+	clear: none;
+	float: left;
+    margin-left:0;
+	width: 48.9795%;
+	display: block;
+	text-align:justify;
+}
+
+#LayoutDiv3{
+	margin-top:3%;
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+	text-align:justify;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+}
+
+#img1{
+	margin-top:0;
+	float:left;
+	margin-right:1%;
+}
+
+#txt1{
+	float:right;
+	width:88%;
+}
+
+#img2{
+	margin-top:0;
+	margin-left:0;
+	float:left;
+}
+
+#txt2{
+	float:right;
+	width:88%;
+}
+
+#img3{
+	padding-top:2%;
+	margin-left:0;
+	float:left;
+}
+
+#txt3{
+	float:right;
+	width:88%;
+}
+
+#LayoutDiv4{
+	clear: both;
+	float: left;
+	width: 90%;
+	display: block;
+}
+
+#LayoutDiv5{
+	margin-left:1%;
+	clear: both;
+	float: left;
+	margin-top:2%;
+	width: 90%;
+	display: block;
+}
+
+#LayoutDiv6{
+	margin-left:1%;
+	clear: both;
+	float: left;
+	margin-top:4%;
+	width: 90%;
+	display: block;
+}
+
+.button a{
+	text-decoration:none;
+	color: #fff;
+}
+
+.button{
+text-decoration:none;
+margin-top:10px;
+border: solid 1px #fff;
+background: #060;
+padding: 7px 12px;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px;
+cursor: pointer;
+margin-right:0;
+float:left;
+}
+
+}

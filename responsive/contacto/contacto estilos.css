@@ -1,0 +1,603 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	color:#069;
+	margin-top:2%;
+	font-size:14px;
+	margin-bottom:3%;
+}
+
+#LayoutDiv2 {
+	margin-top:6%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#LayoutDiv3 {
+	margin-top:2%;
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 100%;
+	display: block;
+}
+
+#LayoutDiv4 {
+	margin-top:2%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#LayoutDiv5 {
+	margin-top:2%;
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 100%;
+	display: block;
+}
+
+#LayoutDiv6 {
+	margin-top:2%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#contenedor {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+    box-shadow:0px 0px 5px black; 
+	-webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+
+#contenedor input:focus {
+    border: 1px solid #999;
+    -webkit-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+}
+
+#contenedor textarea {
+    border: 1px solid #999;
+    -webkit-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+}
+
+#contenedor input[type=text]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:4%;
+	margin-top:1%;
+}
+
+#contenedor input[type=tel]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:2%;
+	margin-top:1%;
+}
+
+#contenedor input[type=email]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:2%;
+	margin-top:1%;
+}
+
+#contenedor input[type=number]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:4%;
+	margin-top:1%;
+}
+
+#contenedor textarea{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height:3;
+    width: 90%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:4%;
+	margin-top:1%;
+}
+
+#contenedor label{
+	font-size:16px;
+	margin-left:4.5%;
+	color:#069;
+}
+
+.button{
+	margin:15px;
+border: solid 1px #fff;
+background: #060;
+color: #fff;
+padding: 7px 12px;
+-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		cursor: pointer;
+		margin-right:2.4%;
+		float:right;
+		margin-bottom:6%;
+}
+
+#mapa{
+	margin-top:4%;
+	margin-bottom:3%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#mapa iframe{
+	width:100%;
+	height:450px;
+}
+
+
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	color:#069;
+	margin-top:2%;
+	font-size:17px;
+	margin-bottom:3%;
+}
+
+#LayoutDiv2 {
+	margin-top:2%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+}
+
+#LayoutDiv3 {
+	margin-top:2%;
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+}
+
+#LayoutDiv4 {
+	margin-top:2%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+}
+
+#LayoutDiv5 {
+	margin-top:2%;
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+}
+
+#LayoutDiv6 {
+	margin-top:2%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#contenedor {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+    box-shadow:0px 0px 5px black; 
+	-webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+
+#contenedor input:focus {
+    border: 1px solid #999;
+    -webkit-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+}
+
+#contenedor textarea {
+    border: 1px solid #999;
+    -webkit-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+}
+
+#contenedor input[type=text]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:4%;
+	margin-top:1%;
+}
+
+#contenedor input[type=email]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:4%;
+	margin-top:1%;
+}
+
+#contenedor input[type=number]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:4%;
+	margin-top:1%;
+}
+
+#contenedor textarea{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height:3;
+    width: 95%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:2%;
+	margin-top:1%;
+}
+
+#contenedor label{
+	font-size:16px;
+	margin-left:2%;
+	color:#069;
+}
+
+.button{
+	margin:10px;
+border: solid 1px #fff;
+background: #060;
+color: #fff;
+padding: 7px 12px;
+-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		cursor: pointer;
+		margin-right:2.4%;
+		float:right;
+}
+
+#mapa{
+	margin-top:4%;
+	margin-bottom:3%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#mapa iframe{
+	width:100%;
+	height:450px;
+}
+
+
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	color:#069;
+	margin-top:2%;
+	font-size:20px;
+	margin-bottom:3%;
+}
+
+#LayoutDiv2 {
+	margin-top:2%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+}
+
+#LayoutDiv3 {
+	margin-top:2%;
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+}
+
+#LayoutDiv4 {
+	margin-top:2%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+}
+
+#LayoutDiv5 {
+	margin-top:2%;
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+}
+
+#LayoutDiv6 {
+	margin-top:2%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#contenedor {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+    box-shadow:0px 0px 5px black; 
+	-webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+
+#contenedor input:focus {
+    border: 1px solid #999;
+    -webkit-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+}
+
+#contenedor textarea {
+    border: 1px solid #999;
+    -webkit-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+}
+
+#contenedor input[type=text]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:4%;
+	margin-top:1%;
+}
+
+#contenedor input[type=tel]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:4%;
+	margin-top:1%;
+}
+
+#contenedor input[type=email]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:4%;
+	margin-top:1%;
+}
+
+#contenedor input[type=number]{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height: 1;
+    width:91%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:4%;
+	margin-top:1%;
+}
+
+#contenedor textarea{
+	background: #fbfbfb;
+    font-size: 20px;
+    line-height:3;
+    width: 95%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+	margin-left:2%;
+	margin-top:1%;
+}
+
+#contenedor label{
+	font-size:16px;
+	margin-left:2%;
+	color:#069;
+}
+
+.button{
+	margin:10px;
+border: solid 1px #fff;
+background: #060;
+color: #fff;
+padding: 7px 12px;
+-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+        border-radius:4px;
+		cursor: pointer;
+		margin-right:2.4%;
+		float:right;
+}
+
+#mapa{
+	margin-top:4%;
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#mapa iframe{
+	width:100%;
+	height:450px;
+}
+
+}

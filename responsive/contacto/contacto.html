@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formulario Contacto</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="contacto estilos.css" rel="stylesheet" type="text/css">
+<!-- 
+Para obtener más información sobre los comentarios condicionales situados alrededor de las etiquetas html en la parte superior del archivo:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+  
+Haga lo siguiente si usa su compilación personalizada de modernizr (http://www.modernizr.com/):
+* inserte el vínculo del código js aquí
+* elimine el vínculo situado debajo para html5shiv
+* añada la clase "no-js" a las etiquetas html en la parte superior
+* también puede eliminar el vínculo con respond.min.js si ha incluido MQ Polyfill en su compilación de modernizr 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="validacion contacto.js"></script>
+</head>
+<body>
+
+<div class="gridContainer clearfix">
+
+  <div id="LayoutDiv1" align="center"><h2>FORMULARIO CONTACTO</h2></div>
+  
+  <div id="contenedor"> <!-- inicio contenedor -->
+  
+  <form action="mensaje contacto.php" method="post" onsubmit="return validar(this);">
+  
+  <div id="LayoutDiv2">
+  <label for="nombre" style="margin-left:4%">Nombre <span>(requerido):</span></label>
+  <input type="text" name="nombre" onblur="revisar(this);"/>
+  </div>
+  
+  <div id="LayoutDiv3">
+  <label for="email" style="margin-left:4%">Email <span>(requerido):</span></label>
+  <input type="email" name="email" onblur="revisar(this); revisaremail(this);"/>
+  </div>
+  
+  <div id="LayoutDiv4">
+  <label for="telefono" style="margin-left:4%">Telefono <span>(requerido):</span></label>
+  <input type="number" name="telefono" onblur="revisar(this);"/>
+  </div>
+  
+  <div id="LayoutDiv5">
+  <label for="asunto" style="margin-left:4%">Asunto <span>(requerido):</span></label>
+  <input type="tel" name="asunto" onblur="revisar(this);"/>
+  </div>
+  
+  <div id="LayoutDiv6">
+  <label for="mensaje">Mensaje:</label>
+  <textarea name="mensaje" ></textarea>
+  </div>
+  <input class="button" type="submit" value="Enviar Mensaje"/>
+  </form>
+  </div>
+  <!-- fin contenedor -->
+  
+  <div id="mapa" align="center">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.417181327159!2d-74.59770868568646!3d4.51860534446886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f3e2ad2f0f2d3%3A0x62f107440d9d83f9!2sCentro+De+Salud+Apulo!5e0!3m2!1ses!2sco!4v1465902683144" frameborder="0" style="border:0" allowfullscreen></iframe> 
+  </div> 
+  
+</div> <!-- fin gridContainer -->
+
+</body>
+</html>
